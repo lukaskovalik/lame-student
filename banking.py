@@ -4,23 +4,23 @@ from random import randint
 class Account(metaclass = ABCMeta):
     @abstractmethod
     def createAccount(self):
-        pass
+        return 0
 
     @abstractmethod
-    def autenticate(self):
-        pass
+    def authenticate(self):
+        return 0
 
     @abstractmethod
     def withdraw(self):
-        pass
+        return 0
 
     @abstractmethod
     def deposit(self):
-        pass
+        return 0
 
     @abstractmethod
     def displayBalance(self):
-        pass
+        return 0
 
 
 class SavingsAccount(Account):
@@ -76,8 +76,8 @@ while True:
     elif userInput == 2:
         print("Enter your name")
         name = input()
-        print("Enter your initial deposit")
-        deposit = int(input())
+        print("Enter your account number")
+        accountNumber = int(input())
         autenticationStatus = savingAccount.authenticate(name, accountNumber)
         if autenticationStatus is True:
             while True:
@@ -93,7 +93,7 @@ while True:
                 elif userInput == 2:
                     print("Enter an amount to be deposited")
                     depositAmount = int(input())
-                    savingAccount.deposit()
+                    savingAccount.deposit(depositAmount)
                 elif userInput == 3:
                     savingAccount.displayBalance()
                 elif userInput == 4:
