@@ -1,4 +1,4 @@
-#runnin pace calculator
+#runninq pace calculator
 
 while True:
     print("Napis 1 ak chces vypocitat priemerne tempo behu")
