@@ -1,9 +1,9 @@
 #running pace calculator
 
 while True:
-    print("Napis 1 ak chces vypocitat priemerne tempo behu")
-    print("Napis 2 ak chces vypocitat cas behu")
-    print("Napis 3 ak chces ukoncit program")
+    print("1. priemerne tempo behu")
+    print("2. cas behu")
+    print("3. ukoncit program")
     userInput = int(input())
     if userInput == 1:
         lenght = input("Zadaj vzdialenost v km: \n").replace(',', '.')
