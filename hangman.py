@@ -21,7 +21,6 @@ lives = 6 # hrac ma 6 pokusov
 guessedLetters = []
 
 while lives > 0:
-
     guessedWord = ""
     for letter in guess:
         if letter in guessedLetters:
