@@ -16,11 +16,12 @@ def userInput():
             continue
         return pismeno
 
+guess = wordToGuess()
 lives = 6 # hrac ma 6 pokusov
 guessedLetters = []
 
 while lives > 0:
-    guess = wordToGuess()
+
     guessedWord = ""
     for letter in guess:
         if letter in guessedLetters:
